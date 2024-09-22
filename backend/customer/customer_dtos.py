@@ -11,8 +11,10 @@ class CreateCustomerData(BaseModel):
     hashedPassword: str
     phone: str
 
+
 class CreateCustomerResponse(BaseModel):
     id: ObjectId
+
 
 class UpdateCustomerData(BaseModel):
     name: Optional[str] = None
